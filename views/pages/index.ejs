@@ -1,3 +1,7 @@
+<!----------------------------------------!>
+<!-- RASDASH INDEX - (C)2019: Ben Sykes --!>
+<!----------------------------------------->
+
 <!DOCTYPE html>
 
 <html>
@@ -14,15 +18,81 @@
     <!-- Navbar -->
     <% include ../partials/navbar.ejs %>
     
-    <!-- Main Conatiner -->
+    <!-- Dash Container -->
     <div class="container-fluid">
-    
       
-    
+      <!-- System Information -->
+      <div class="row mx-2 mt-3">
+        
+        <!-- Device Model -->
+        <div class="mr-3">
+          Model: <span id="device-model" class="text-muted">Unknown</span>
+        </div>
+        
+        <!-- Server Status -->
+        <div class="mr-3">
+          Connection Status: <span id="connection-online" class="text-success">Online</span>
+          <span id="connection-offline" class="text-danger hidden">Offline</span>
+        </div>
+        
+      </div>
+      
+      <!-- Main Values -->
+      <div class="row">
+      
+        <!-- CPU Temp -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">CPU Temperature</h5>
+          <h1 class="display-3">
+            <span id="cpu-temp">0</span>
+            <small class="ml-n3">&deg;C</small>
+          </h1>
+        </div>
+        
+        <!-- CPU Usage -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">CPU Usage</h5>
+          <h1 class="display-3">
+            <span id="cpu-usage">0</span>
+            <small class="ml-n3">%</small>
+          </h1>
+        </div>
+        
+        <!-- RAM Usage -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">RAM Usage</h5>
+          <h1 class="display-3 mb-n2">
+            <span id="ram-usage">0</span>
+            <small class="ml-n3">%</small>
+          </h1>
+          <h3 class="display-5">
+            <span id="ram-used">0</span>
+            <small class="ml-n1">/ <span id="ram-total">0</span> MB</small>
+          </h3>
+        </div>
+        
+        <!-- Disk Usage -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">Disk Usage</h5>
+          <h1 class="display-3 mb-n2">
+            <span id="disk-usage">0</span>
+            <small class="ml-n3">%</small>
+          </h1>
+          <h3 class="display-5">
+            <span id="disk-used">0</span>
+            <small class="ml-n1">/ <span id="disk-total">0</span> GB</small>
+          </h3>
+        </div>
+        
+      </div>
+      
     </div>
 
-    <!-- Base Footer -->
-    <% include ../partials/footbase.ejs %>
+    <!-- Base JS -->
+    <% include ../partials/jsbase.ejs %>
+    
+    <!-- Dash Script -->
+    <script src="/javascript/dash.js"></script>
 
   </body>
 

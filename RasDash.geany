@@ -28,11 +28,11 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
-FILE_NAME_0=559;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
-FILE_NAME_1=264;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
-FILE_NAME_2=275;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Fsetup.ejs;0;2
-FILE_NAME_3=0;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpartials%2Fnavbar.ejs;0;4
+current_page=1
+FILE_NAME_0=898;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
+FILE_NAME_1=589;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
+FILE_NAME_2=527;Javascript;0;EUTF-8;2;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fdash.js;0;2
+FILE_NAME_3=482;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Fsetup.ejs;0;2
 
 [VTE]
 last_dir=/home/pi
