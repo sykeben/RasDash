@@ -3,22 +3,39 @@ const express = require('express')
 const path = require('path')
 const logger = require('./logger.js')
 const hhmmss = require('./hhmmss.js')
+const si = require('systeminformation')
+
+// Initialize the API.
+logger.info('Initializing API...')
+const api = express()
+api.on('mount', (parent) => logger.state('API mounted to application.'))
+
+// Configure API requests.
+logger.info('Configuring API requests...')
+api.get('/cpu/temp', function(req, res) {
+  // CPU temperature.
+  si.cpuTemperature()
+    .then(data => res.send(data.main.toString()))
+    .catch(error => logger.error('API /cpu/temp: Error getting information'))
+})
 
 // Initialize the application.
-logger.info('Initializing application server...')
-const PORT = 80
+logger.info('Initializing application...')
+const appPort = 80
 const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
+app.use('/api', api)
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 // Configure application requests.
 logger.info('Configuring application requests...')
 app.get('/', (req, res) => res.render('pages/index'))
+app.get('/setup', (req, res) => res.render('pages/setup'))
 
-// Start application.
-logger.info('Starting application on port ' + PORT.toString() + '...')
-app.listen(PORT, () => logger.info('Application started.'))
+// Start server.
+logger.info('Starting server on port ' + appPort.toString() + '...')
+app.listen(appPort, () => logger.state('Server started.'))
 
 // Initialize console commands.
 logger.info('Initializing console commands...')
@@ -39,7 +56,7 @@ process.stdin.on('data', function (text) {
     
     // Command: /config
     } else if (command === '/config') {
-      logger.data('CONFIG: Port=' + PORT.toString())
+      logger.data('CONFIG: App on port ' + appPort.toString() + '.')
       
     // Command: /uptime
     } else if (command === '/uptime') {
@@ -55,4 +72,4 @@ process.stdin.on('data', function (text) {
     logger.data('ECHO: ' + command)
   }
 })
-logger.info('Console ready, run \"/help\" to list commands.')
+logger.state('Console ready, run \"/help\" to list commands.')

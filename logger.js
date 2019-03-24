@@ -9,6 +9,7 @@ tags["warn"] =  chalk.yellow("[WARN]  ")
 tags["data"] =  chalk.green("[DATA]  ")
 tags["error"] = chalk.red("[ERROR] ")
 tags["fatal"] = chalk.bold.red("[FATAL] ")
+tags["state"] = chalk.magenta("[STATE] ")
 
 // Blank log.
 exports.blank = function(message) {
@@ -38,4 +39,10 @@ exports.error = function(message) {
 // Fatal log.
 exports.fatal = function(message) {
   console.log(chalk.red(tags["fatal"]+message))
+}
+
+
+// State log.
+exports.state = function(message) {
+  console.log(tags["state"]+message)
 }
