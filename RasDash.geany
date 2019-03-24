@@ -28,8 +28,9 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
-FILE_NAME_0=1309;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
+current_page=1
+FILE_NAME_0=1626;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
+FILE_NAME_1=0;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Flogger.js;0;2
 
 [VTE]
 last_dir=/home/pi
