@@ -1,0 +1,56 @@
+<!----------------------------------------!>
+<!-- RASDASH ABOUT - (C)2019: Ben Sykes --!>
+<!----------------------------------------->
+
+<!DOCTYPE html>
+
+<html>
+	
+  <head>
+
+    <!-- Base Header -->
+    <% include ../partials/headbase.ejs %>
+
+  </head>
+
+  <body>
+	  
+    <!-- Navbar -->
+    <% include ../partials/navbar.ejs %>
+    
+    <!-- Main Container -->
+    <div class="container p-4 py-5">
+    
+	  <!-- Offline Alert -->
+	  <div id="alert-offline" class="alert alert-warning shadow mb-5 hidden">
+	    The server seems to be <span class="text-danger">offline</span>, some data may be unavaliable.
+	  </div>
+	
+	  <!-- Title & Version -->
+	  <div class="mb-3">
+	    <h2 class="bg-danger text-light d-inline-block px-3 py-2 rounded shadow-sm mb-2">RasDash</h2>
+	    <h4 class="text-muted display-5">Version <span id="app-version">?</span></h4>
+	  </div>
+	  
+	  <!-- Server Description -->
+	  <div class="mb-3">
+	    <p class="lead mb-0">
+		  This RasDash server is running on a "<span id="device-model">?</span>" model computer.<br>
+		  According to the API the device has <span id="ram-total">?</span>MB of RAM and <span id="disk-total">?</span>GB of total disk space.
+	    </p>
+	  </div>
+	  
+	  <!-- Copyright Information -->
+	  <% include ../partials/copyright.ejs %>
+    
+    </div>
+    
+    <!-- Base JS -->
+    <% include ../partials/jsbase.ejs %>
+    
+    <!-- Other JS -->
+    <script src="/javascript/about.js"></script>
+    
+  </body>
+  
+</html>

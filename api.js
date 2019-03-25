@@ -2,6 +2,9 @@
 // RASDASH API SERVER (C)2019: Ben Sykes //
 ///////////////////////////////////////////
 
+// Set version.
+const serverVersion = '0.1.0'
+
 // Import libraries.
 const express = require('express')
 const path = require('path')
@@ -17,9 +20,12 @@ api.on('mount', (parent) => logger.state('API mounted to application.'))
 logger.info('Configuring API requests...')
 const siError = 'error getting data'
 
-// API requests: status.
-api.get('/online', function(req, res) { // Server Status (online)
+// API requests: info.
+api.get('/info/online', function(req, res) { // Server Status (info/online)
   res.status(200).send('true')
+})
+api.get('/info/version', function(req, res) { // Server Version (info/version)
+  res.send('\"' + serverVersion + '\"')
 })
 
 // API requests: system.

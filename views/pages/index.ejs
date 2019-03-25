@@ -18,11 +18,11 @@
     <!-- Navbar -->
     <% include ../partials/navbar.ejs %>
     
-    <!-- Dash Container -->
+    <!-- Main Container -->
     <div class="container-fluid">
       
       <!-- System Information -->
-      <div class="small row mx-3 px-1 mt-4  ">
+      <div class="small row mx-3 px-1 mt-4">
         
         <!-- Device Model -->
         <div class="mr-3">
@@ -91,13 +91,15 @@
         
       </div>
       
+      <!-- Copyright Information -->
+	    <% include ../partials/copyright.ejs %>
+      
     </div>
 
     <!-- Base JS -->
     <% include ../partials/jsbase.ejs %>
     
     <!-- Other JS -->
-    <script src="/javascript/settings.js"></script>
     <script src="/javascript/dash.js"></script>
 
   </body>

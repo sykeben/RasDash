@@ -18,7 +18,7 @@ function periodicUpdate() {
     getData('sys/model', function(data) { updateElement('device-model', data.toString()); });
     getData('sys/os', function(data) { updateElement('device-os', data.toString()); });
     getData('ram/total', function(data) { updateElement('ram-total', Math.round(parseInt(data))); });
-    getData('fs/'+getSetting('fsId').toString()+'/total', function(data) { updateElement('disk-total', Math.round(parseInt(data))); });
+    getData('fs/0/total', function(data) { updateElement('disk-total', Math.round(parseInt(data))); });
   }
   
   if (serverOnline()) {
@@ -67,7 +67,7 @@ function getData(source, success) {
 // Server status checker.
 function serverOnline() {
   $.ajax({
-    url: (API + 'online'),
+    url: (API + 'info/online'),
     dataType: 'json',
     success: function(data) { setOnline(true); },
     error : function(data) { setOnline(false); }
@@ -80,3 +80,6 @@ function setOnline(value) {
 
 // Make dash periodically update every 5 seconds.
 window.setInterval(periodicUpdate, 5000);
+
+// Make dash update upon load.
+window.onload = periodicUpdate;
