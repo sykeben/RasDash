@@ -23,7 +23,7 @@ echo ""
 
 echo -e "${BWhi}[ RasDash Console ]${RCol}"
 echo ""
-nodejs app.js
+node app.js
 rasexit=$?
 echo ""
 echo -e "${BWhi}[ RasDash Closed ]${RCol}"
