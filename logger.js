@@ -4,9 +4,9 @@ const chalk = require('chalk')
 // Tag list.
 var tags = []
 tags["blank"] = "        "
-tags["info"] =  chalk.cyan("[INFO]  ")
-tags["warn"] =  chalk.yellow("[WARN]  ")
-tags["data"] =  chalk.green("[DATA]  ")
+tags["info"] =  chalk.cyan("[INFO ] ")
+tags["warn"] =  chalk.yellow("[WARN ] ")
+tags["data"] =  chalk.green("[DATA ] ")
 tags["error"] = chalk.red("[ERROR] ")
 tags["fatal"] = chalk.bold.red("[FATAL] ")
 tags["state"] = chalk.magenta("[STATE] ")

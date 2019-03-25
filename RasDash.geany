@@ -28,16 +28,17 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
+current_page=4
 FILE_NAME_0=898;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
-FILE_NAME_1=589;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
+FILE_NAME_1=764;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
 FILE_NAME_2=527;Javascript;0;EUTF-8;2;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fdash.js;0;2
 FILE_NAME_3=482;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Fsetup.ejs;0;2
+FILE_NAME_4=225;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Flogger.js;0;2
 
 [VTE]
 last_dir=/home/pi
 
 [build-menu]
 EX_00_LB=_Execute
-EX_00_CM=sudo bash ./run
+EX_00_CM=sudo bash ./runlinux.sh
 EX_00_WD=%p
