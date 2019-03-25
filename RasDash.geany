@@ -28,12 +28,15 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=898;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
-FILE_NAME_1=764;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
-FILE_NAME_2=527;Javascript;0;EUTF-8;2;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fdash.js;0;2
-FILE_NAME_3=482;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Fsetup.ejs;0;2
-FILE_NAME_4=225;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Flogger.js;0;2
+current_page=7
+FILE_NAME_0=353;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapp.js;0;2
+FILE_NAME_1=1120;Javascript;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fapi.js;0;2
+FILE_NAME_2=472;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Findex.ejs;0;2
+FILE_NAME_3=639;Javascript;0;EUTF-8;2;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fdash.js;0;2
+FILE_NAME_4=599;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpages%2Fsetup.ejs;0;2
+FILE_NAME_5=237;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fsetup.js;0;4
+FILE_NAME_6=387;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fpublic%2Fjavascript%2Fsettings.js;0;4
+FILE_NAME_7=167;HTML;0;EUTF-8;0;1;0;%2Fhome%2Fpi%2FNodeApps%2FRasDash%2Fviews%2Fpartials%2Fnavbar.ejs;0;4
 
 [VTE]
 last_dir=/home/pi
