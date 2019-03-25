@@ -3,31 +3,28 @@
 /////////////////////////////////////////
 
 // Setting management.
-function getSetting(key) {
-  localStorage.getItem(key);
+export function getSetting(key) {
+  localStorage.getItem(key.toString());
 }
-function setSetting(key, value) {
-  localStorage.setItem(key, value);
+export function setSetting(key, value) {
+  localStorage.setItem(key.toString(), value);
 }
-function remSetting(key) {
-  localStorage.removeItem(key);
+export function remSetting(key) {
+  localStorage.removeItem(key.toString());
 }
-function clrSettings() {
+export function clrSettings() {
   localStorage.clear();
 }
 
 // Default loader.
-function setDefaults() {
+export function setDefaults() {
   setSetting('fsId', '0');
   setSetting('settingsPresent', 'true');
 }
 
-// Setting initialization.
-function initSettings() {
+// Conditional default loader.
+export function setDefaultsIfNone() {
   if (getSetting('settingsPresent') != 'true') {
-	  setDefaults();
+    setDefaults();
   }
 }
-
-// Init settings upon page load.
-window.onload = initSettings;

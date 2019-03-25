@@ -2,6 +2,9 @@
 // RASDASH SETUP (C)2019: Ben Sykes //
 //////////////////////////////////////
 
+// Import setup stuff.
+import './settings.js';
+
 // Setup displayer.
 function displaySetup() {
   setField('input-fsid', getSetting('fsId'));
