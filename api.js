@@ -22,10 +22,15 @@ api.get('/online', function(req, res) { // Server Status (online)
   res.status(200).send('true')
 })
 
-// API requests: hardware.
-api.get('/hw/model', function(req, res) { // Device Model (hw/model)
+// API requests: system.
+api.get('/sys/model', function(req, res) { // Device Model (sys/model)
   si.system()
     .then(data => res.send('\"' + data.model.toString() + '\"'))
+    .catch(error => res.status(404).send(siError))
+})
+api.get('/sys/os', function(req, res) { // Device OS (sys/os)
+  si.osInfo()
+    .then(data => res.send('\"' + data.platform + ' (' + data.distro + ')\"'))
     .catch(error => res.status(404).send(siError))
 })
 
@@ -75,4 +80,5 @@ api.get('/ram/total', function(req, res) { // Total RAM in MB (ram/total)
     .catch(error => res.status(404).send(siError))
 })
 
+// Export the API to what's using it.
 module.exports = api;
