@@ -1,0 +1,14 @@
+[Unit]
+Description=RasDash
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node app.js
+WorkingDirectory=/home/pi/RasDash
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
