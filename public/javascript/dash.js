@@ -8,6 +8,39 @@ const API = ROOT + '/api/';
 var online = true;
 var updateCount = 0;
 
+var uptimeInterval = undefined;
+
+function toHHMMSS(sec) {
+  var hours   = Math.floor(sec / 3600);
+  var minutes = Math.floor((sec - (hours * 3600)) / 60);
+  var seconds = sec - (hours * 3600) - (minutes * 60);
+
+  if(hours < 10) {
+    hours = "0" + hours;
+  }
+  if(minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if(seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  return hours + ':' + minutes + ':' + seconds;
+}
+
+function initUptimeInterval(sec) {
+  if(uptimeInterval) {
+    window.clearInterval(uptimeInterval);
+  }
+
+  var seconds = Math.round(parseInt(sec));
+  
+  uptimeInterval = setInterval(function() {
+      updateElement('server-uptime', toHHMMSS(seconds));
+      seconds++;
+  }, 1000);
+}
+
 // Dash updater script, meant to be run periodically.
 function periodicUpdate() {
   // Increment update counter.
@@ -26,6 +59,10 @@ function periodicUpdate() {
     
     $('#connection-online').removeClass('hidden');
     $('#connection-offline').addClass('hidden');
+
+    if(!uptimeInterval) {
+      getData('uptime', function(data) { initUptimeInterval(data); });
+    }
     
     getData('cpu/temp', function(data) { updateElement('cpu-temp', Math.round(parseInt(data))); });
     getData('cpu/usage', function(data) { updateElement('cpu-usage', Math.round(parseInt(data))); });
@@ -47,6 +84,10 @@ function periodicUpdate() {
     
     $('#connection-online').addClass('hidden');
     $('#connection-offline').removeClass('hidden');
+
+    window.clearInterval(uptimeInterval);
+    uptimeInterval = undefined;
+    updateElement('server-uptime', '00:00:00');
     
     updateElement('cpu-temp', 0);
     updateElement('cpu-usage', 0);

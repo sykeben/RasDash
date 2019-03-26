@@ -102,5 +102,9 @@ api.get('/network/receive/:interface', function(req, res) {
     .catch(error => res.status(404).send(siError))
 })
 
+api.get('/uptime', function(req, res) {
+  res.send(process.uptime() + '')
+})
+
 // Export the API to what's using it.
 module.exports = api;
