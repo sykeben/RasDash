@@ -22,30 +22,7 @@
     <div class="container-fluid">
       
       <!-- System Information -->
-      <div class="small row mx-3 px-1 mt-4">
-        
-        <!-- Device Model -->
-        <div class="mr-3">
-          Model: <span id="device-model" class="text-muted">Unknown</span>
-        </div>
-        
-        <!-- Device OS -->
-        <div class="mr-3">
-          OS: <span id="device-os" class="text-muted">Unknown</span>
-        </div>
-        
-        <!-- Server Status -->
-        <div class="mr-3">
-          Connection Status: <span id="connection-online" class="text-success">Online</span>
-          <span id="connection-offline" class="text-danger hidden">Offline</span>
-        </div>
-
-        <!-- Server Uptime -->
-        <div class="mr-3">
-          Server Uptime: <span id="server-uptime" class="text-muted">00:00:00</span>
-        </div>
-        
-      </div>
+      <% include ../partials/sysinfo.ejs %>
       
       <!-- Main Values -->
       <div class="row mx-1">
@@ -129,7 +106,10 @@
       </div>
       
       <!-- Copyright Information -->
-	    <% include ../partials/copyright.ejs %>
+      <% include ../partials/copyright.ejs %>
+      
+      <!-- Pagination -->
+      <% include ../partials/dashpages.ejs %>
       
     </div>
 
