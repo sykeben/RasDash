@@ -24,7 +24,8 @@ app.set('view engine', 'ejs')
 
 // Configure application requests.
 logger.info('Configuring application requests...')
-app.get('/', (req, res) => res.render('pages/index'))
+app.get('/', (req, res) => res.redirect('/dash/0'))
+app.get('/dash/0', (req, res) => res.render('pages/dash_0'))
 app.get('/about', (req, res) => res.render('pages/about'))
 
 // Start server.
