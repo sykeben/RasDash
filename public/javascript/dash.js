@@ -10,7 +10,7 @@ var updateCount = 0;
 
 // Dash updater script, meant to be run periodically.
 function periodicUpdate() {
-  // Incriment update counter.
+  // Increment update counter.
   updateCount += 1;
   
   // If the page has been loaded recently, initialize.
@@ -35,7 +35,13 @@ function periodicUpdate() {
     
     getData('fs/0/usage', function(data) { updateElement('disk-usage', Math.round(parseInt(data))); });
     getData('fs/0/used', function(data) { updateElement('disk-used', Math.round(parseInt(data))); });
-    
+
+    getData('network/transmit/eth0', function(data) { updateElement('network-transmit-eth0', Math.round(parseInt(data))); });
+    getData('network/receive/eth0', function(data) { updateElement('network-receive-eth0', Math.round(parseInt(data))); });
+
+    getData('network/transmit/wlan0', function(data) { updateElement('network-transmit-wlan0', Math.round(parseInt(data))); });
+    getData('network/receive/wlan0', function(data) { updateElement('network-receive-wlan0', Math.round(parseInt(data))); });
+
   } else {
     // Server is offline, clear dash.
     
@@ -50,7 +56,13 @@ function periodicUpdate() {
     
     updateElement('disk-usage', 0);
     updateElement('disk-used', 0);
-    
+
+    updateElement('network-transmit-eth0', 0);
+    updateElement('network-receive-eth0', 0);
+
+    updateElement('network-transmit-wlan0', 0);
+    updateElement('network-receive-wlan0', 0);
+
   }
 }
 
@@ -78,8 +90,8 @@ function setOnline(value) {
   online = value;
 }
 
-// Make dash periodically update every 5 seconds.
-window.setInterval(periodicUpdate, 5000);
+// Make dash periodically update every second.
+window.setInterval(periodicUpdate, 1000);
 
 // Make dash update upon load.
 window.onload = periodicUpdate;

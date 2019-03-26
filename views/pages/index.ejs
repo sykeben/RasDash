@@ -62,7 +62,7 @@
             <small class="ml-n3 font-weight-lighter">%</small>
           </h1>
         </div>
-        
+
         <!-- RAM Usage -->
         <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
           <h5 class="card-title">RAM Usage</h5>
@@ -75,7 +75,9 @@
             <small class="ml-n1">/ <span id="ram-total">0</span> MB</small>
           </h3>
         </div>
-        
+
+        <div class="w-100"></div>
+
         <!-- Disk Usage -->
         <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
           <h5 class="card-title">Disk Usage</h5>
@@ -86,6 +88,36 @@
           <h3 class="display-5">
             <span id="disk-used">0</span>
             <small class="ml-n1">/ <span id="disk-total">0</span> GB</small>
+          </h3>
+        </div>
+
+        <!-- Network Stats for eth0 -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">Network - eth0</h5>
+          <h6>Transmit</h5>
+          <h3 class="display-5">
+            <span id="network-transmit-eth0">0</span>
+            <small class="font-weight-lighter">Kbit/s</small>
+          </h3>
+          <h6 class="card-title">Receive</h5>
+          <h3 class="display-5">
+            <span id="network-receive-eth0">0</span>
+            <small class="font-weight-lighter">Kbit/s</small>
+          </h3>
+        </div>
+
+        <!-- Network Stats for wlan0 -->
+        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+          <h5 class="card-title">Network - wlan0</h5>
+          <h6>Transmit</h5>
+          <h3 class="display-5">
+            <span id="network-transmit-wlan0">0</span>
+            <small class="font-weight-lighter">Kbit/s</small>
+          </h3>
+          <h6 class="card-title">Receive</h5>
+          <h3 class="display-5">
+            <span id="network-receive-wlan0">0</span>
+            <small class="font-weight-lighter">Kbit/s</small>
           </h3>
         </div>
         
