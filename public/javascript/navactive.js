@@ -9,12 +9,17 @@ var navUpdateCounter = 0;
 function updateNav() {
     
     navUpdateCounter += 1;
+    var currentPath = window.location.href.split(window.location.host)[1];
     
     const links = document.getElementsByName('nav-link');
     
-    for (var i=0; i<links.length; i++) {
-        if (links[i].getAttribute('href') == window.location.href.split(window.location.host)[1]) {
-            $('#nav-link-' + i.toString()).addClass('active');
+    if (currentPath.split('/')[1] == 'dash') {
+        $('#nav-link-0').addClass('active');
+    } else {
+        for (var i=0; i<links.length; i++) {
+            if (links[i].getAttribute('href') == currentPath) {
+                $('#nav-link-' + i.toString()).addClass('active');
+            }
         }
     }
     
