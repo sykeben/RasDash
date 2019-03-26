@@ -1,4 +1,4 @@
-// Config
+// Import config. (Thanks @Ernie3 for adding this!)
 const config = require('./config.json');
 
 // Import libraries.

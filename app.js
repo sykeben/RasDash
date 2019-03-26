@@ -2,7 +2,7 @@
 // RASDASH SERVER (C)2019: Benjamin Sykes //
 ////////////////////////////////////////////
 
-// Config
+// Import config. (Thanks @Ernie3 for adding this!)
 const config = require('./config.json');
 
 // Import libraries.
