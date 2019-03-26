@@ -2,8 +2,8 @@
 // RASDASH API SERVER (C)2019: Ben Sykes //
 ///////////////////////////////////////////
 
-// Set version.
-const serverVersion = '0.1.0'
+// Get version
+const serverVersion = require('./package.json').version
 
 // Import libraries.
 const express = require('express')
@@ -84,6 +84,26 @@ api.get('/ram/total', function(req, res) { // Total RAM in MB (ram/total)
   si.mem()
     .then(data => res.send((data.total/(1024*1024)).toString()))
     .catch(error => res.status(404).send(siError))
+})
+
+// API requests: Network
+api.get('/network/transmit/:interface', function(req, res) {
+  let interface = req.params.interface
+
+  si.networkStats(interface)
+    .then(data => res.send((data[0].tx_sec / 125) + '')) // total data trasmitted in kilobits/second
+    .catch(error => res.status(404).send(siError))
+})
+api.get('/network/receive/:interface', function(req, res) {
+  let interface = req.params.interface
+  
+  si.networkStats(interface)
+    .then(data => res.send((data[0].rx_sec / 125) + '')) // total data received in kilobits/second
+    .catch(error => res.status(404).send(siError))
+})
+
+api.get('/uptime', function(req, res) {
+  res.send(process.uptime() + '')
 })
 
 // Export the API to what's using it.
