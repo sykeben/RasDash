@@ -1,3 +1,6 @@
+// Config
+const config = require('./config.json');
+
 // Import libraries.
 const logger = require('./logger.js')
 const hhmmss = require('./hhmmss.js')
@@ -26,7 +29,7 @@ exports.initCli = function() {
       
       // Command: /config
       } else if (command === '/config') {
-        logger.data('CONFIG: App on port ' + appPort.toString() + '.')
+        logger.data('CONFIG: App on port ' + config.port + '.')
         
       // Command: /uptime
       } else if (command === '/uptime') {

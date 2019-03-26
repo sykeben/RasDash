@@ -2,6 +2,9 @@
 // RASDASH SERVER (C)2019: Benjamin Sykes //
 ////////////////////////////////////////////
 
+// Config
+const config = require('./config.json');
+
 // Import libraries.
 const express = require('express')
 const path = require('path')
@@ -12,7 +15,7 @@ const api = require('./api.js')
 
 // Initialize the application.
 logger.info('Initializing application...')
-const appPort = 80
+const appPort = config.port;
 const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/api', api)
