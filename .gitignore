@@ -56,3 +56,6 @@ thumbs.db
 
 # Node Modules directory
 node_modules
+
+# Geany Project
+.geany
