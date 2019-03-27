@@ -108,4 +108,4 @@ api.get('/uptime', function(req, res) {
 })
 
 // Export the API to what's using it.
-module.exports = api;
+module.exports = api
