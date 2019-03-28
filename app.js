@@ -49,7 +49,7 @@ if (allowRun) {
 
 	// Initialize the application.
 	logger.info('Initializing application...')
-	const appPort = config.port
+	const appPort = process.env.PORT || 5000 // Port setup custom for use with Heroku.
 	const app = express()
 	app.use(express.static(path.join(__dirname, 'public')))
 	app.use('/api', api)
