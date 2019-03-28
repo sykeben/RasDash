@@ -30,9 +30,7 @@ api.get('/info/version', function(req, res) { // Server Version (info/version)
 
 // API requests: System.
 api.get('/sys/model', function(req, res) { // Device Model (sys/model)
-  si.system()
-    .then(data => res.send('\"' + data.model.toString() + '\"'))
-    .catch(error => res.status(404).send(siError))
+  res.send('\"Heroku Server Rack\"')
 })
 api.get('/sys/os', function(req, res) { // Device OS (sys/os)
   si.osInfo()
