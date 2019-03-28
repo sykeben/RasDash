@@ -25,7 +25,7 @@ sudo apt-get update
 echo -e "${Pur}2>${RCol} Installing/updating NodeJS..."
 sudo apt-get install -y nodejs
 
-echo -e "${Pur}3>${RCol} Installing libraries..."
-npm install chalk ejs express path systeminformation
+echo -e "${Pur}3>${RCol} Installing NPM libraries..."
+npm install
 
 echo -e "${Gre}+>${RCol} Completed."
