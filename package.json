@@ -5,7 +5,7 @@
   "description": "Raspberry Pi dashboard, powered by NodeJS.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js normal",
+    "start": "./run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ben Sykes",
