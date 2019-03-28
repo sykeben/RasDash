@@ -14,6 +14,10 @@ elif [ "$1" = "start" ]; then
 elif [ "$1" = "stop" ]; then
     echo "Stopping RasDash service..."
     sudo systemctl stop RasDash.service
+
+elif [ "$1" = "restart" ]; then
+    echo "Restarting RasDash service..."
+    sudo systemctl restart RasDash.service
     
 elif [ "$1" = "enable" ]; then
     echo "Enabling RasDash service to start on boot..."
@@ -32,17 +36,18 @@ elif [ "$1" = "uninstall" ]; then
 
 elif [ "$1" = "help" ]; then
     echo ""
-    echo "./service_manager.sh [option]"
+    echo "./service_manager [option]"
     echo ""
     echo "install     Installs RasDash service and enables start on boot"
     echo "start       Starts RasDash via systemctl (service must be installed)"
     echo "stop        Stops RasDash via systemctl (service must be installed)"
+    echo "restart     Restarts RasDash via systemctl (service must be installed)"
     echo "enable      Enables RasDash to start on boot (service must be installed)"
     echo "disable     Disables RasDash from starting on boot (service must be installed)"
     echo "uninstall   Completely removes RasDash service from systemctl"
     echo ""
 
 else
-    echo "Invalid option. Options are help, install, uninstall, enable, disable, start, stop."
+    echo "Invalid option. Options are help, install, uninstall, enable, disable, start, stop, restart."
 
 fi
