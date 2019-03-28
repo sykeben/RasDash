@@ -24,6 +24,8 @@ All service related functions can be managed via the `service_manager` script. I
 ### Updating RasDash
 Updating RasDash is pretty easy. Just repull the repo to `~/RasDash` and restart the service.
 
+<br>
+
 ### Uninstalling RasDash
 If for some reason your unhappy with RasDash, you can uninstall it:
 1. First, let's remove the service. Run `cd ~/RasDash; ./service_manager stop; ./service_manager uninstall`.
