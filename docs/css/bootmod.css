@@ -4,13 +4,6 @@ body {
     padding-top: 56px;
 }
 
-/* MODALS */
-
-.modal-center {
-    margin-top: calc(100vh/3);
-    align-self: center;
-}
-
 /* TITLES */
 
 .row-title {
