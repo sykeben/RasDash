@@ -1,5 +1,5 @@
-// Config
-const config = require('./config.json');
+// Import config. (Thanks @Ernie3 for adding this!)
+const config = require('./config.json')
 
 // Import libraries.
 const logger = require('./logger.js')

@@ -2,7 +2,7 @@
 // RASDASH API SERVER (C)2019: Ben Sykes //
 ///////////////////////////////////////////
 
-// Get version
+// Get version. (Thanks @Ernie3 for adding this!)
 const serverVersion = require('./package.json').version
 
 // Import libraries.
@@ -20,7 +20,7 @@ api.on('mount', (parent) => logger.state('API mounted to application.'))
 logger.info('Configuring API requests...')
 const siError = 'error getting data'
 
-// API requests: info.
+// API requests: Info.
 api.get('/info/online', function(req, res) { // Server Status (info/online)
   res.status(200).send('true')
 })
@@ -28,7 +28,7 @@ api.get('/info/version', function(req, res) { // Server Version (info/version)
   res.send('\"' + serverVersion + '\"')
 })
 
-// API requests: system.
+// API requests: System.
 api.get('/sys/model', function(req, res) { // Device Model (sys/model)
   si.system()
     .then(data => res.send('\"' + data.model.toString() + '\"'))
@@ -52,7 +52,7 @@ api.get('/cpu/usage', function(req, res) { // CPU Usage % (cpu/usage)
     .catch(error => res.status(404).send(siError))
 })
 
-// API requests: file system.
+// API requests: File system.
 api.get('/fs/:id/usage', function(req, res) { // File System Usage % (fs/[id]/usage)
   si.fsSize()
     .then(data => res.send(data[parseInt(req.params.id)].use.toString()))
@@ -86,25 +86,26 @@ api.get('/ram/total', function(req, res) { // Total RAM in MB (ram/total)
     .catch(error => res.status(404).send(siError))
 })
 
-// API requests: Network
+// API requests: Network.
 api.get('/network/transmit/:interface', function(req, res) {
   let interface = req.params.interface
 
   si.networkStats(interface)
-    .then(data => res.send((data[0].tx_sec / 125) + '')) // total data trasmitted in kilobits/second
+    .then(data => res.send((data[0].tx_sec / 125) + '')) // Total data trasmitted in kilobits/second (network/transmit/[interface])
     .catch(error => res.status(404).send(siError))
 })
 api.get('/network/receive/:interface', function(req, res) {
   let interface = req.params.interface
   
   si.networkStats(interface)
-    .then(data => res.send((data[0].rx_sec / 125) + '')) // total data received in kilobits/second
+    .then(data => res.send((data[0].rx_sec / 125) + '')) // Total data received in kilobits/second (network/recieve/[interface])
     .catch(error => res.status(404).send(siError))
 })
 
+// API Requests: Uptime
 api.get('/uptime', function(req, res) {
-  res.send(process.uptime() + '')
+  res.send(process.uptime() + '') // System uptime (uptime)
 })
 
 // Export the API to what's using it.
-module.exports = api;
+module.exports = api

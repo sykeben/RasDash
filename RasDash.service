@@ -3,7 +3,7 @@ Description=RasDash
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node app.js
+ExecStart=/usr/bin/node app.js service
 WorkingDirectory=/home/pi/RasDash
 StandardOutput=inherit
 StandardError=inherit

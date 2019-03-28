@@ -22,30 +22,7 @@
     <div class="container-fluid">
       
       <!-- System Information -->
-      <div class="small row mx-3 px-1 mt-4">
-        
-        <!-- Device Model -->
-        <div class="mr-3">
-          Model: <span id="device-model" class="text-muted">Unknown</span>
-        </div>
-        
-        <!-- Device OS -->
-        <div class="mr-3">
-          OS: <span id="device-os" class="text-muted">Unknown</span>
-        </div>
-        
-        <!-- Server Status -->
-        <div class="mr-3">
-          Connection Status: <span id="connection-online" class="text-success">Online</span>
-          <span id="connection-offline" class="text-danger hidden">Offline</span>
-        </div>
-
-        <!-- Server Uptime -->
-        <div class="mr-3">
-          Server Uptime: <span id="server-uptime" class="text-muted">00:00:00</span>
-        </div>
-        
-      </div>
+      <% include ../partials/sysinfo.ejs %>
       
       <!-- Main Values -->
       <div class="row mx-1">
@@ -97,7 +74,7 @@
         </div>
 
         <!-- Network Stats for eth0 -->
-        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+        <div class="col m-3 px-4 pt-4 pb-3 border rounded-lg bg-light shadow-sm text-center">
           <h5 class="card-title">Network - eth0</h5>
           <h6>Transmit</h5>
           <h3 class="display-5">
@@ -112,7 +89,7 @@
         </div>
 
         <!-- Network Stats for wlan0 -->
-        <div class="col m-3 p-4 border rounded-lg bg-light shadow-sm text-center">
+        <div class="col m-3 px-4 pt-4 pb-3 border rounded-lg bg-light shadow-sm text-center">
           <h5 class="card-title">Network - wlan0</h5>
           <h6>Transmit</h5>
           <h3 class="display-5">
@@ -129,7 +106,10 @@
       </div>
       
       <!-- Copyright Information -->
-	    <% include ../partials/copyright.ejs %>
+      <% include ../partials/copyright.ejs %>
+      
+      <!-- Pagination -->
+      <% include ../partials/dashpages.ejs %>
       
     </div>
 
@@ -137,7 +117,7 @@
     <% include ../partials/jsbase.ejs %>
     
     <!-- Other JS -->
-    <script src="/javascript/dash.js"></script>
+    <script src="/javascript/dash_0.js"></script>
 
   </body>
 

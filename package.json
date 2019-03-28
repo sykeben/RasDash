@@ -15,6 +15,6 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "path": "^0.12.7",
-    "systeminformation": "^4.1.2"
+    "systeminformation": "^4.1.3"
   }
 }

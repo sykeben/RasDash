@@ -53,3 +53,9 @@ jspm_packages
 
 # Windows
 thumbs.db
+
+# Node Modules directory
+node_modules
+
+# Geany Projects
+*.geany
