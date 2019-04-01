@@ -3,7 +3,7 @@
 
 if [ "$1" = "install" ]; then
     echo "Adding RasDash service to systemctl..."
-    sudo cp RasDash.service /etc/systemd/system/RasDash.service
+    cat RasDash.service | sudo sed "s@\${DIR}@${PWD}@" - > /etc/systemd/system/RasDash.service
     sudo systemctl enable RasDash.service
     echo "Done."
     
