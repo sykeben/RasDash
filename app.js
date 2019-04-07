@@ -58,7 +58,7 @@ if (allowRun) {
 
 	// Configure application requests.
 	logger.info('Configuring application requests...')
-	app.get('/', (req, res) => res.render('/'))
+	app.get('/', (req, res) => res.render('pages/dash'))
 	app.get('/about', (req, res) => res.render('pages/about'))
 
 	// Start server.
