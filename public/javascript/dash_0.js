@@ -131,8 +131,7 @@ function setOnline(value) {
   online = value;
 }
 
-
-// new code
+// Have dash update every second after finishing.
 const setIntervalAsync = (fn, ms) => {
   fn().then(() => {
     setTimeout(() => setIntervalAsync(fn, ms), ms);
@@ -144,9 +143,6 @@ const delay = deplayMs => new Promise((resolve) => {
 });
 
 setIntervalAsync(async () => { periodicUpdate(); await delay(1000); }, 1000);
-
-// Make dash periodically update every second.
-//window.setInterval(periodicUpdate, 1000);
 
 // Make dash update upon load.
 window.onload = periodicUpdate;

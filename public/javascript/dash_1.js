@@ -99,8 +99,7 @@ function setOnline(value) {
   online = value;
 }
 
-
-// new code
+// Have dash update every second after finishing.
 const setIntervalAsync = (fn, ms) => {
   fn().then(() => {
     setTimeout(() => setIntervalAsync(fn, ms), ms);
