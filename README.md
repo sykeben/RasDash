@@ -3,6 +3,13 @@ A Raspberry Pi dashboard built on NodeJS.
 
 <br>
 
+### Statuses
+| Service   | Status |
+|-----------|--------|
+| Live Demo | ![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge) |
+
+<br>
+
 ### Installing RasDash
 Installing RasDash is pretty easy:
 1. On a Raspberry Pi running PiXEL, run the following command in your terminal: `git clone https://github.com/sykeben/RasDash.git ~/RasDash`, this will clone the current version of the code to your device.
