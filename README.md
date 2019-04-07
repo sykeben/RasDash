@@ -6,7 +6,7 @@ A Raspberry Pi dashboard built on NodeJS.
 ### Statuses
 | Service   | Status |
 |-----------|--------|
-| Live Demo | ![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge) |
+| Live Demo | ![Heroku](https://heroku-badge.herokuapp.com/?app=rasdash-livedemo) |
 
 <br>
 
