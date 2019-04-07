@@ -13,16 +13,6 @@ function updateNav() {
     
     const links = document.getElementsByName('nav-link');
     
-    if (currentPath.split('/')[1] == 'dash') {
-        $('#nav-link-0').addClass('active');
-    } else {
-        for (var i=0; i<links.length; i++) {
-            if (links[i].getAttribute('href') == currentPath) {
-                $('#nav-link-' + i.toString()).addClass('active');
-            }
-        }
-    }
-    
     if (navUpdateCounter > 3) {
         window.clearInterval(updateNav);
     }
