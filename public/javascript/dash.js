@@ -131,8 +131,8 @@ function setOnline(value) {
   online = value;
 }
 
-// Make dash periodically update every second.
-window.setInterval(periodicUpdate, 1000);
+// Make dash periodically update every few seconds.
+window.setInterval(periodicUpdate, 10000);
 
 // Make dash update upon load.
 window.onload = periodicUpdate;
