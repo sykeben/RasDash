@@ -4,9 +4,9 @@ A Raspberry Pi dashboard built on NodeJS.
 <br>
 
 ### Build Status
-| Platform | Status |
+| Branch | Status |
 |---|---|
-| Latest Release | ![AppVeyor](https://img.shields.io/appveyor/ci/sykeben/rasdash.svg?style=plastic) |
+| Master | ![AppVeyor](https://img.shields.io/appveyor/ci/sykeben/rasdash.svg?style=plastic) |
 | Live Demo | ![Heroku](https://heroku-badge.herokuapp.com/?app=rasdash-livedemo) |
 
 <br>
