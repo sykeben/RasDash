@@ -23,9 +23,11 @@ echo -e "${Pur}1>${RCol} Preparing apt for node installation..."
 sudo apt-get update
 
 echo -e "${Pur}2>${RCol} Installing/updating NodeJS..."
+# Get latest Node version
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-echo -e "${Pur}3>${RCol} Installing libraries..."
-npm install chalk ejs express path systeminformation
+echo -e "${Pur}3>${RCol} Installing NPM libraries..."
+npm install
 
 echo -e "${Gre}+>${RCol} Completed."
