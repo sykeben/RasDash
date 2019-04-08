@@ -7,6 +7,7 @@ A Raspberry Pi dashboard built on NodeJS.
 | Branch | Status |
 |---|---|
 | Master | ![AppVeyor](https://img.shields.io/appveyor/ci/sykeben/rasdash.svg?style=plastic) |
+| Latest Release | ![AppVeyor](https://img.shields.io/appveyor/ci/sykeben/rasdash-l43ue.svg?style=plastic) |
 | Live Demo | ![Heroku](https://heroku-badge.herokuapp.com/?app=rasdash-livedemo) |
 
 <br>
