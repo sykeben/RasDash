@@ -5,8 +5,8 @@
   "description": "Raspberry Pi dashboard, powered by NodeJS.",
   "main": "app.js",
   "scripts": {
-    "start": "./run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sudo ./run",
+    "test": "node test.js"
   },
   "author": "Ben Sykes",
   "license": "ISC",

@@ -47,6 +47,7 @@ jspm_packages
 
 # VS Code
 .vscode
+launch.json
 
 # Mac
 .DS_Store
