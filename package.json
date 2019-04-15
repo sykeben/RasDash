@@ -1,12 +1,12 @@
 {
   "private": true,
   "name": "RasDash",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Raspberry Pi dashboard, powered by NodeJS.",
   "main": "app.js",
   "scripts": {
-    "start": "./run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sudo ./run",
+    "test": "node test.js"
   },
   "author": "Ben Sykes",
   "license": "ISC",
