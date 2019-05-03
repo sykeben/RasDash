@@ -1,4 +1,4 @@
-# [RasDash](https://sykeben.github.io/RasDash)
+# RasDash
 A Raspberry Pi dashboard built on NodeJS.
 
 <br>
@@ -39,3 +39,11 @@ Updating RasDash is pretty easy. Just repull the repo to `~/RasDash` and restart
 If for some reason your unhappy with RasDash, you can uninstall it:
 1. First, let's remove the service. Run `cd ~/RasDash; ./service_manager stop; ./service_manager uninstall`.
 2. Now, all we need to do is remove the files left. Run `rm -rf ~/RasDash` to make them disappear.
+
+<br>
+
+### Community Perception
+More information about RasDash from the community \(and me\) has been written on...
+- [AlternativeTo](https://alternativeto.net/software/rasdash/)
+- [Hackaday.io](https://hackaday.io/project/164593-rasdash)
+- [MOONGIFT](http://moongift.jp/2019/05/rasdash-raspberry-pi%e7%94%a8%e3%81%ae%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%83%9c%e3%83%bc%e3%83%89/) <span style="font-size: 50%;">\(In Japanese but Google Translate won't accept the URL\)</span>
