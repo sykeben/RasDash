@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "RasDash",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Raspberry Pi dashboard, powered by NodeJS.",
   "main": "app.js",
   "scripts": {
