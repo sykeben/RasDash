@@ -2,8 +2,6 @@
 A Raspberry Pi dashboard built on NodeJS.  
 <sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~</sup>
 
-<br>
-
 ### Build Status
 | Branch | Status |
 |---|---|
