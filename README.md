@@ -53,5 +53,6 @@ More information about RasDash from the community \(and me\) has been written on
 If you want to submit code, write an issue/pull request, or comment, you should read these documents first:
 - [Code of Conduct](https://github.com/sykeben/RasDash/blob/master/CODE_OF_CONDUCT.md)
 - [Contribution Guidelines](https://github.com/sykeben/RasDash/blob/master/CONTRIBUTING.md)
-- [Code License](https://github.com/sykeben/RasDash/blob/master/LICENSE)
+- [Code License](https://github.com/sykeben/RasDash/blob/master/LICENSE)  
+
 By reading these docs, it makes it easier for you (and me) to work on issues, changes, and more.
