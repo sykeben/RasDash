@@ -1,6 +1,6 @@
 # RasDash
 A Raspberry Pi dashboard built on NodeJS.  
-<sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~</sup>
+<sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~ [Guidelines](#guidelines) ~</sup>
 
 ### Build Status
 | Branch | Status |
@@ -46,3 +46,13 @@ More information about RasDash from the community \(and me\) has been written on
 - [AlternativeTo](https://alternativeto.net/software/rasdash/)
 - [Hackaday.io](https://hackaday.io/project/164593-rasdash)
 - [MOONGIFT](http://moongift.jp/2019/05/rasdash-raspberry-pi%e7%94%a8%e3%81%ae%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%83%9c%e3%83%bc%e3%83%89/) \([English Translation](https://translate.googleusercontent.com/translate_c?depth=1&rurl=translate.google.com&sl=auto&sp=nmt4&tl=en&u=https://www.moongift.jp/2019/05/rasdash-raspberry-pi%25E7%2594%25A8%25E3%2581%25AE%25E3%2583%2580%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589/&xid=17259,15700022,15700186,15700191,15700253,15700256,15700259&usg=ALkJrhj0-o62mgfnd9aE6D2AAmTT_jAHbw)\)
+
+<br>
+
+### Guidelines
+If you want to submit code, write an issue/pull request, or comment, you should read these documents first:
+- [Code of Conduct](https://github.com/sykeben/RasDash/blob/master/CODE_OF_CONDUCT.md)
+- [Contribution Guidelines](https://github.com/sykeben/RasDash/blob/master/CONTRIBUTING.md)
+- [Code License](https://github.com/sykeben/RasDash/blob/master/LICENSE)  
+
+By reading these docs, it makes it easier for you (and me) to work on issues, changes, and more.
