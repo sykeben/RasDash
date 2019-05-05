@@ -2,7 +2,7 @@
 
 # RasDash
 A Raspberry Pi dashboard built on NodeJS.  
-<sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~ [Guidelines](#guidelines) ~</sup>
+<sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~ [Guidelines](#guidelines) ~ [Subreddit](https://www.reddit.com/r/rasdash/) ~</sup>
 
 ### Build Testing Status
 | Branch | Status |
