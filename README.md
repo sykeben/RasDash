@@ -1,3 +1,5 @@
+<img style="display:block;" src="https://github.com/sykeben/RasDash/raw/master/public/images/icon-banner.png" width="100%">
+
 # RasDash
 A Raspberry Pi dashboard built on NodeJS.  
 <sup>~ [Install](#installing-rasdash) ~ [Configure](#changing-the-config) ~ [Run](#startingstoppingrestarting-rasdash) ~ [Update](#updating-rasdash) ~ [Uninstall](#uninstalling-rasdash) ~ [Guidelines](#guidelines) ~</sup>
