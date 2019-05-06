@@ -17,18 +17,18 @@
 	  
     <!-- Navbar -->
     <% include ../partials/navbar.ejs %>
+
+    <!-- Offline Alert -->
+	  <div id="alert-offline" class="alert alert-warning shadow-sm mb-5 hidden">
+	    The server seems to be <span class="text-danger">offline</span>, some data may be unavaliable.
+	  </div>
     
     <!-- Main Container -->
     <div class="container p-4 py-5">
-    
-	  <!-- Offline Alert -->
-	  <div id="alert-offline" class="alert alert-warning shadow mb-5 hidden">
-	    The server seems to be <span class="text-danger">offline</span>, some data may be unavaliable.
-	  </div>
 	
 	  <!-- Title & Version -->
 	  <div class="mb-3">
-	    <h2 class="bg-danger text-light d-inline-block px-3 py-2 rounded shadow-sm mb-2">
+	    <h2 class="bg-danger text-light d-inline-block px-4 py-2 rounded shadow mb-2">
         <img height="64px" class="my-1 align-middle" src="/images/icon-sm.png">
         <span class="d-inline-block align-middle">RasDash</span>
       </h2>
