@@ -68,7 +68,8 @@ More information about RasDash from the community \(and me\) has been written on
 - [AlternativeTo](https://alternativeto.net/software/rasdash/)
 - [Hackaday.io](https://hackaday.io/project/164593-rasdash)
 - [MOONGIFT](http://moongift.jp/2019/05/rasdash-raspberry-pi%e7%94%a8%e3%81%ae%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%83%9c%e3%83%bc%e3%83%89/) \([English Translation](https://translate.googleusercontent.com/translate_c?depth=1&rurl=translate.google.com&sl=auto&sp=nmt4&tl=en&u=https://www.moongift.jp/2019/05/rasdash-raspberry-pi%25E7%2594%25A8%25E3%2581%25AE%25E3%2583%2580%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589/&xid=17259,15700022,15700186,15700191,15700253,15700256,15700259&usg=ALkJrhj0-o62mgfnd9aE6D2AAmTT_jAHbw)\)
-- [Open Source Developer Podcast episode](https://anchor.fm/opensourcedeveloperpod/episodes/The-Razzle-Dazzle-of-RasDash-e3vqee)
+- [Open Source Developer Podcast episode](https://anchor.fm/opensourcedeveloperpod/episodes/The-Razzle-Dazzle-of-RasDash-e3vqee) (Thank you so much, [@perkinsjr](https://github.com/perkinsjr)!)
+
 <br>
 
 ### Guidelines
