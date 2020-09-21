@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "-> Checking if user is root..."
+if [[ $EUID -ne 0 ]]; then
+  echo "!> User is not root, cannot install dependencies."
+  exit 1
+fi
+echo "+> User is root, installing dependencies..."
+echo ""
+
+echo "1> Preparing apt for node installation..."
+sudo apt-get update
+
+echo "2> Installing/updating NodeJS..."
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+echo "3> Installing NPM libraries..."
+npm install
+
+echo "+> Completed."

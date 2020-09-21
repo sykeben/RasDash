@@ -1,0 +1,8 @@
+echo "-> Checking if user is root..."
+if [[ $EUID -ne 0 ]]; then
+  echo "!> User is not root, RasDash cannot be run."
+  exit 1
+fi
+
+echo "+> User is root, running RasDash..."
+node app.js normal

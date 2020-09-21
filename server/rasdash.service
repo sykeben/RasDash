@@ -1,0 +1,14 @@
+[Unit]
+Description=rasdash
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node server/rasdash.js
+WorkingDirectory=${DIR}
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

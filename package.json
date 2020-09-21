@@ -1,0 +1,24 @@
+{
+  "name": "rasdash",
+  "version": "1.0.0",
+  "description": "A Raspberry Pi dashboard built on NodeJS.",
+  "main": "server/rasdash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sykeben/RasDash.git"
+  },
+  "author": "SykeBen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sykeben/RasDash/issues"
+  },
+  "homepage": "https://github.com/sykeben/RasDash#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "systeminformation": "^4.27.5"
+  }
+}
