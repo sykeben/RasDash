@@ -9,6 +9,8 @@ A Raspberry Pi dashboard built on NodeJS.
 
 ### Project State
 
+**New Notes!** I'm alive, and let's just say that I may have a lot more experience doing this. The 1.0 rewrite is going to be restarted from scratch. In the meantime, stay posted.
+
 A moderate rewrite, [v1.0.0](https://github.com/sykeben/RasDash/tree/1.0-rewrite), is in the works because I've really grown as a dev since starting this project and I think it's time for me to use these skills to make this just a bit greater. A lot of the code in this application has been sitting around since like [v0.1.0](https://github.com/sykeben/RasDash/tree/bb1611e653eb68159f415aec2b78cd335bdea123), which was never actually put into the releases page. As of now, backend-side of things will remain completely the same as it works well.  
 
 My plans for the 1.0.0 rewrite are to simply redo the UI. After this UI refresh I think RasDash will be finally on it's way to, what I would consider, being a great little application. For those who worry the UI will completely deviate from the current layout, don't. As of now, I do not plan to change the layout at all, I just plan to switch the style to work well with all browsers, and on most screen sizes as I see this may be a good tool for checking a Pi's status from some mobile device.  
