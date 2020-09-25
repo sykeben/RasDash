@@ -4,6 +4,7 @@
   "description": "A Raspberry Pi dashboard built on NodeJS.",
   "main": "server/rasdash.js",
   "scripts": {
+    "start": "node server/rasdash.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
