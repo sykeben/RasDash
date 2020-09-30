@@ -1,13 +1,25 @@
-// Default gauge options.
+// Gauge creator.
+function newGauge(target, additionalOpts) {
+
+    return new Gauge(
+
+        document.querySelector(target)
+
+    ).setOptions($.extend({
+
+        pointer: { color: '#eeeeee' },
+        strokeColor: '#5a5a5a'
+        
+    }), additionalOpts);
+
+}
 
 // Dashboard gauges.
 let gauges = {
 
     cpu: {
-
-        load: new Gauge(document.querySelector('#cpu-load-gauge')).setOptions({ limitMax: 100 }),
-        temp: new Gauge(document.querySelector('#cpu-temp-gauge')).setOptions({})
-
+        load: newGauge('#cpu-load-gauge'),
+        temp: newGauge('#cpu-temp-gauge')
     }
 
 };
@@ -41,4 +53,8 @@ setIntervalAsync(async () => {
 }, 1500);
 
 // Start upon load.
-window.onload = periodicUpdate;
+window.onload = function() {
+
+    periodicUpdate();
+
+}

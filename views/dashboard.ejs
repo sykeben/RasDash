@@ -4,16 +4,11 @@
 
     <head>
 
-        <meta charset="UTF-8">
-
-        <title>RasDash</title>
-
-        <link rel="stylesheet" href="/bootstrap.css">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <%- include('partials/header.ejs') %>
 
     </head>
 
-    <body>
+    <body class="bg-dark text-light">
 
         <div class="container-fluid text-center">
 
@@ -21,23 +16,23 @@
 
                 <div class="col col-md-6 col-lg-4 col-xl-3 p-5">
                     <p class="lead">CPU Load</p>
-                    <canvas id="cpu-load-gauge"></canvas>
-                    <h1 class="display-1"><span id="cpu-load-label">0</span>%</h1>
+                    <canvas id="cpu-load-gauge" class="w-100"></canvas>
+                    <h1 class="display-2"><span id="cpu-load-label">0</span>%</h1>
                 </div>
 
                 <div class="col col-md-6 col-lg-4 col-xl-3 p-5">
                     <p class="lead">CPU Temperature</p>
-                    <canvas id="cpu-temp-gauge"></canvas>
-                    <h1 class="display-1"><span id="cpu-temp-label">0</span>&deg;C</h1>
+                    <canvas id="cpu-temp-gauge" class="w-100"></canvas>
+                    <h1 class="display-2"><span id="cpu-temp-label">0</span>&deg;C</h1>
                 </div>
 
             </div>
 
         </div>
 
-        <script src="/jquery.js"></script>
-        <script src="/gauge.js"></script>
-        <script src="/dashboard.js"></script>
+        <%- include('partials/footer.ejs') %>
+        <script src="/vendor/gauge.js"></script>
+        <script src="/custom/dashboard.js"></script>
 
     </body>
 
