@@ -10,14 +10,31 @@ const app = express();
 app.set('views', 'views');
 app.set('view engine', 'ejs');
 
+// Automatic temp converter.
+function tempConvert(celcius) {
+    if (serverConfig.units.temp == 'c') {
+        return celcius;
+    } else if (serverConfig.units.temp == 'f') {
+        return (celcius * 1.8) + 32.0;
+    } else {
+        return -1;
+    }
+}
+
 // Setup backend.
 app.get('/api/get', async (req, res) => {
 
     res.json({
 
+        // Value units.
+        units: {
+            temp: serverConfig.units.temp.toUpperCase()
+        },
+
+        // CPU.
         cpu: {
-            load: Math.round((await si.currentLoad()).currentload),
-            temp: (await si.cpuTemperature()).main
+            temp: Math.round(tempConvert((await si.cpuTemperature()).main)),
+            load: Math.round((await si.currentLoad()).currentload)
         }
 
     });
